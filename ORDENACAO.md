@@ -1,7 +1,6 @@
 # Algorimos de ordenação
 
 ## Definição de ordenação
-----
 - A partir de uma sequencia de N elementos, é feita permutação dessa sequencia até que ela esteja ordenada de uma determinada forma.
 
 ## O que considerar no processo de ordenação?
