@@ -5,12 +5,10 @@
 - A partir de uma sequencia de N elementos, é feita permutação dessa sequencia até que ela esteja ordenada de uma determinada forma.
 
 ## O que considerar no processo de ordenação?
------------------
 - Tamanho(size)
 - Estabilade(stabity)
 
 ## Algoritmos de ordenação por Comparação
-------------
 ### Bubble Sort (Ordenação em bolha)
 ![All Text](https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif)
 - Velocidade: O(n²) - Considerado lento
@@ -81,8 +79,6 @@ Insertion Sort ou ordenação por inserção é o método que percorre um vetor 
 ![Alt Text](https://d2m498l008ebpa.cloudfront.net/2016/12/insertion-sort-animation-2-1.gif)
 
 ## Ordenação em tempo linear
-
- -------------------
 - Os algorimos de ordenação por comparação possuem limite assintótico de O(n log n).
 Os algoritmos de ordenação linear trazem uma solução mais rápida.
 
