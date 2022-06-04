@@ -124,6 +124,9 @@ Link para estudo complementar: https://drive.google.com/file/d/1fTRLoBsyluyYhU6i
 
 ## Links de referencia:
 https://drive.google.com/file/d/1r_xDYHfERbi1gnNy5lCUAWY6FtxxIObY/view?usp=sharing
+
 https://blog.betrybe.com/tecnologia/bubble-sort-tudo-sobre/
+
 https://www.bytellect.com/resources/sorting-in-c-with-the-qsort-function-bytellect001.pdf
+
 https://drive.google.com/file/d/1fTRLoBsyluyYhU6ixamJKDj4W5zgGaiu/view?usp=sharing
