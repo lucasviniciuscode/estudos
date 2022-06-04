@@ -77,6 +77,21 @@ Insertion Sort ou ordenação por inserção é o método que percorre um vetor 
 
 ![Alt Text](https://d2m498l008ebpa.cloudfront.net/2016/12/insertion-sort-animation-2-1.gif)
 
+```c
+void insercao (int vet, int tam){
+int i, j, x;
+for (i=2; i<=tam; i++){
+	x = vet[i];
+	j=i-1;
+	vet[0] = x; 
+	while (x < vet[j]){
+        vet[j+1] = vet[j];
+        j--;
+    }
+    vet[j+1] = x;
+}
+```
+
 ## Ordenação em tempo linear
 - Os algorimos de ordenação por comparação possuem limite assintótico de O(n log n).
 Os algoritmos de ordenação linear trazem uma solução mais rápida.
