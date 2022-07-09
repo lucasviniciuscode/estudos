@@ -1,0 +1,3 @@
+Verificando o padrão  havia colocada na cadeira foi modificado.
+Padrão: Quatro de uma disciplina e dois que gostam da outra.
+Quebra o padrão: Três de uma disciplina e três que gostam da outra.
