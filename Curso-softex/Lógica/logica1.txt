@@ -1,0 +1,14 @@
+Quimica
+1- Socrates
+2- Aristóteles
+3- Platão
+
+Fisica
+1- Aristóteles
+2- Platão
+3- Socrates
+
+Matemática
+1- Platão
+2- Socrates
+3- Aristóteles
