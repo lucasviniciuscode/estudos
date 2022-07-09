@@ -1,0 +1,21 @@
+1. proposta das variaveis
+NOME: caracter
+CPF: caracter
+ALTURA: real
+RG: caracter
+ENDERECO: caracter
+
+2. declaração de variaveis
+declare caracter NOME;
+declare caracter CPF;
+declare caracter RG;
+declare real ALTURA;
+declare caracter ENDERECO;
+
+3. comando de atribuição
+NOME <- José Almeida da Silva
+CPF <- 12345678900
+RG <- '9517530'
+ALTURA <- 1,78
+ENDERECO <- 'Rua A, 380 – Centro – Recife/PE'
+
