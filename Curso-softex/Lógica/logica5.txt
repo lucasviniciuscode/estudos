@@ -1,0 +1,148 @@
+algoritmo ESCOLHETRASPORTE
+
+escolha: caractere
+
+inicio
+    escreva('É terrestre?');
+    leia(escolha);
+
+    SE(escolha = 'Sim') ENTAO
+        escreva('Cabe apenas uma pessoa?');
+        leia(escolha);
+        SE (escolha = 'Sim') ENTAO
+            escreva('É pesado?');
+            leia(escolha);
+            SE (escolha = 'Sim') ENTAO
+                escreva('Então, o transporte escolhido foi o trator');
+                RETORNA VERDADEIRO;
+            FIMSE
+            escreva('Tem pedal?');
+            leia(escolha);
+            SE (escolha = 'Sim') ENTAO
+                escreva('Então, o transporte escolhido foi a bicicleta');
+                RETORNA VERDADEIRO;
+            SENAO RETORNA FALSO;
+            FIMSE
+        FIMSE
+        escreva('Usa capacete?');
+        leia(escolha);
+        SE (escolha = 'Sim') ENTAO
+                escreva('Então, o transporte escolhido foi a moto');
+                RETORNA VERDADEIRO;
+        FIMSE
+        escreva('Tem passageiro?');
+        leia(escolha);
+        SE (escolha = 'Sim') ENTAO
+            escreva('Usa trilho?');
+            leia(escolha);
+            SE (escolha = 'Sim') ENTAO
+                escreva('Então, o transporte escolhido foi o trem');
+                RETORNA VERDADEIRO;
+            FIMSE
+            escreva('Anda na pista?');
+            leia(escolha);
+            SE (escolha = 'Sim') ENTAO
+                escreva('É alto?');
+                leia(escolha);
+                SE (escolha = 'Sim') ENTAO
+                    escreva('Usa carroceria?');
+                    leia(escolha);
+                    SE (escolha = 'Sim') ENTAO
+                        escreva('Então, o transporte escolhido foi o caminhão');
+                        RETORNA VERDADEIRO;
+                    FIMSE
+                    escreva('Pode ter cobrador?');
+                    leia(escolha);
+                    SE (escolha = 'Sim') ENTAO
+                        escreva('Então, o transporte escolhido foi o onibus');
+                        RETORNA VERDADEIRO;
+                    SENAO RETORNA FALSO;
+                    FIMSE
+                FIMSE
+            FIMSE
+        SENAO RETORNA FALSO;
+        FIMSE
+    FIMSE
+
+
+    escreva('É aereo?');
+    leia(escolha);
+    SE(escolha = 'Sim') ENTAO
+        escreva('Pecisa pular?');
+        leia(escolha);
+        SE(escolha = 'Sim') ENTAO
+            escreva('Então, o transporte escolhido foi a asa delta');
+            RETORNA VERDADEIRO;
+        FIMSE
+        escreva('Viaja dentro?');
+        leia(escolha);
+        SE(escolha = 'Sim') ENTAO
+            escreva('É devagar?');
+            leia(escolha);
+            SE(escolha = 'Sim') ENTAO
+                escreva('Então, o transporte escolhido foi o balão');
+                RETORNA VERDADEIRO;
+            FIMSE
+            escreva('Tem piloto?');
+            leia(escolha);
+            SE(escolha = 'Sim') ENTAO
+                escreva('Possui asas fixas?');
+                leia(escolha);
+                SE(escolha = 'Sim') ENTAO
+                    escreva('Então, o transporte escolhido foi o avião');
+                    RETORNA VERDADEIRO;
+                FIMSE
+                escreva('Faz voo vertical?');
+                leia(escolha);
+                SE(escolha = 'Sim') ENTAO
+                    escreva('Então, o transporte escolhido foi o helicoptero');
+                    RETORNA VERDADEIRO;
+                SENAO RETORNA FALSO;
+                FIMSE
+            SENAO RETORNA FALSO;
+            FIMSE
+        SENAO RETORNA FALSO;
+        FIMSE
+    FIMSE
+
+    escreva('É aquatico?');
+    leia(escolha);
+    SE(escolha = 'Sim') ENTAO
+        escreva('É coberto de agua?');
+        leia(escolha);
+        SE(escolha = 'Sim') ENTAO
+            escreva('Então, o transporte escolhido foi o submarino');
+            RETORNA VERDADEIRO;
+        FIMSE
+        escreva('Navega na agua?');
+        leia(escolha);
+        SE(escolha = 'Sim') ENTAO
+            escreva('Possui vela?');
+            leia(escolha);
+            SE(escolha = 'Sim') ENTAO
+                escreva('Então, o transporte escolhido foi o barco');
+                RETORNA VERDADEIRO;
+            FIMSE
+            escreva('Tem motor?');
+            leia(escolha);
+            SE(escolha = 'Sim') ENTAO
+                escreva('É alto?');
+                leia(escolha);
+                SE(escolha = 'Sim') ENTAO
+                    escreva('Então, o transporte escolhido foi o navio');
+                    RETORNA VERDADEIRO;
+                FIMSE
+                escreva('Pode ser descoberto?');
+                leia(escolha);
+                SE(escolha = 'Sim') ENTAO
+                    escreva('Então, o transporte escolhido foi a lancha');
+                    RETORNA VERDADEIRO;
+                FIMSE
+            SENAO RETORNA FALSO;
+            FIMSE
+        SENAO RETORNA FALSO;
+        FIMSE
+        SENAO RETORNA FALSO;
+    FIMSE
+fim
+
