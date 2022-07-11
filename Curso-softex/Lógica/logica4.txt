@@ -1,0 +1,34 @@
+algoritmo CADASTRO
+
+Nome: caractere
+Endereco: caractere
+Cidade: caractere
+CPF: caractere
+RG: caractere
+Idade: inteiro
+Nome_do_pai: caractere
+Nome_da_mae: caractere
+Peso: real
+Renda_bruta: real
+
+leia(Nome);
+leia(Endereco);
+leia(Cidade);
+leia(CPF);
+leia(RG);
+leia(Idade);
+leia(Nome_do_pai);
+leia(Nome_da_mae);
+leia(Peso);
+leia(Renda_bruta);
+
+escreva(Nome);
+escreva(Endereco);
+escreva(Cidade);
+escreva(CPF);
+escreva(RG);
+escreva(Idade);
+escreva(Nome_do_pai);
+escreva(Nome_da_mae);
+escreva(Peso);
+escreva(Renda_bruta);
