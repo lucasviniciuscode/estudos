@@ -1,0 +1,75 @@
+algoritmo NOME-NOTA
+
+nomes: vetor[1..100] de caractere
+notas: vetor[1..100] de inteiro
+aprovados: inteiro
+maior_geral: inteiro
+maior_a: inteiro
+maior_b: inteiro
+maior_c: inteiro
+maior_d: inteiro
+aprovados_a: inteiro
+aprovados_b: inteiro
+aprovados_c: inteiro
+aprovados_d: inteiro
+
+inicio
+    aprovados <- 0;
+    para i de 1 ate 100 faca
+        escreva("Digite seu nome:");
+        leia(nomes[i]);
+        escreva("Digite sua nota:")
+        leia(notas[i]);
+        se(notas[i] >= 7) entao
+            aprovados <- aprovados + 1;
+        fimse
+    fimpara
+
+    aprovados_a <- 0;
+    aprovados_b <- 0;
+    aprovados_c <- 0;
+    aprovados_d <- 0;
+    para i de 1 ate 100 faca
+        se(i < 25) ENTAO
+            aprovados_a <- aprovados_a + 1;
+            se(notas[maior_a] < notas[i]) entao
+                maior_a <- i;
+            fimse
+        senao
+            se(i > 25 E i <= 50) ENTAO
+                aprovados_b <- aprovados_b + 1;
+                se(notas[maior_b] < notas[i]) entao
+                    maior_b <- i;
+                fimse
+            senao
+                se(i > 50 E i <= 75) ENTAO
+                    aprovados_c <- aprovados_c + 1;
+                    se(notas[maior_c] < notas[i]) entao
+                        maior_c <- i;
+                    fimse
+                fimse
+                senao
+                    aprovados_d <- aprovados_d + 1;
+                    se(notas[maior_d] < notas[i]) entao
+                        maior_d <- i;
+                    fimse
+            fimse
+        fimse
+        se(notas[maior_geral] < notas[i]) entao
+            maior_geral <- i;
+        fimse
+    fimpara
+
+    escreva("A quantidade de aprovados foi", aprovados);
+    escreva("A quantidade na turma a foi", aprovados_a);
+    escreva("A quantidade na turma b foi", aprovados_b);
+    escreva("A quantidade na turma c foi", aprovados_c);
+    escreva("A quantidade na turma d foi", aprovados_d);
+    escreva("A maior nota na turma a foi", notas[maior_a]);
+    escreva("A maior nota na turma b foi", notas[maior_b]);
+    escreva("A maior nota na turma c foi", notas[maior_c]);
+    escreva("A maior nota na turma d foi", notas[maior_d]);
+    escreva("A maior nota no geral foi ", notas[maior_geral]);
+    escreva("Do aluno ", nomes[maior_geral]);
+
+fim
