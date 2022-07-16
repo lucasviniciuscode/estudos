@@ -1,0 +1,22 @@
+algoritmo INSERTIONSORT
+
+numero: vetor[1..30] de inteiro
+j, i, x: inteiro
+
+inicio
+    numero <- [61,59,57,55,53,51,49,47,45,43,41,39,37,35,33,31,29,27,25,23,21,19,17,15,13,11,9,7, 5,3];
+
+    para i de 1 ate 30 faca
+        j <- i;
+        enquanto(j > 0 E numero[j] < numero[j-1]) faca
+            x = numero[j];
+            numero[j] = numero[j-1];
+            numero[j-1] = x;
+            j <- j-1;
+       fimenquanto
+    fimpara
+
+    para i de 1 ate 30 faca
+        escreva(numero[i]);
+    fimpara
+fim
