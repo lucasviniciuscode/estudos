@@ -1,0 +1,19 @@
+numero: vetor[1..10] de inteiro
+aux, i: inteiro
+
+inicio
+    numero = [10,9,8,7,6,5,4,3,2,1];
+
+    para j de 10 ate 1 faca
+        para i de 1 ate j faca
+            se(numero[i] > numero[i+1])
+            aux <- numero[i];
+            numero[i] <- numero[i+1];
+            numero[i+1] <- aux;
+        fimpara
+    fimpara
+
+    para i de 1 ate 10 faca
+        escreva(numero[i]);
+    fimpara
+fim
