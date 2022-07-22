@@ -1,148 +1,147 @@
-algoritmo ESCOLHETRASPORTE
-
-escolha: caractere
-
-inicio
-    escreva('É terrestre?');
-    leia(escolha);
-
-    SE(escolha = 'Sim') ENTAO
-        escreva('Cabe apenas uma pessoa?');
-        leia(escolha);
-        SE (escolha = 'Sim') ENTAO
-            escreva('É pesado?');
-            leia(escolha);
-            SE (escolha = 'Sim') ENTAO
-                escreva('Então, o transporte escolhido foi o trator');
-                RETORNA VERDADEIRO;
-            FIMSE
-            escreva('Tem pedal?');
-            leia(escolha);
-            SE (escolha = 'Sim') ENTAO
-                escreva('Então, o transporte escolhido foi a bicicleta');
-                RETORNA VERDADEIRO;
-            SENAO RETORNA FALSO;
-            FIMSE
-        FIMSE
-        escreva('Usa capacete?');
-        leia(escolha);
-        SE (escolha = 'Sim') ENTAO
-                escreva('Então, o transporte escolhido foi a moto');
-                RETORNA VERDADEIRO;
-        FIMSE
-        escreva('Tem passageiro?');
-        leia(escolha);
-        SE (escolha = 'Sim') ENTAO
-            escreva('Usa trilho?');
-            leia(escolha);
-            SE (escolha = 'Sim') ENTAO
-                escreva('Então, o transporte escolhido foi o trem');
-                RETORNA VERDADEIRO;
-            FIMSE
-            escreva('Anda na pista?');
-            leia(escolha);
-            SE (escolha = 'Sim') ENTAO
-                escreva('É alto?');
-                leia(escolha);
-                SE (escolha = 'Sim') ENTAO
-                    escreva('Usa carroceria?');
-                    leia(escolha);
-                    SE (escolha = 'Sim') ENTAO
-                        escreva('Então, o transporte escolhido foi o caminhão');
-                        RETORNA VERDADEIRO;
-                    FIMSE
-                    escreva('Pode ter cobrador?');
-                    leia(escolha);
-                    SE (escolha = 'Sim') ENTAO
-                        escreva('Então, o transporte escolhido foi o onibus');
-                        RETORNA VERDADEIRO;
-                    SENAO RETORNA FALSO;
-                    FIMSE
-                FIMSE
-            FIMSE
-        SENAO RETORNA FALSO;
-        FIMSE
-    FIMSE
-
-
-    escreva('É aereo?');
-    leia(escolha);
-    SE(escolha = 'Sim') ENTAO
-        escreva('Pecisa pular?');
-        leia(escolha);
-        SE(escolha = 'Sim') ENTAO
-            escreva('Então, o transporte escolhido foi a asa delta');
-            RETORNA VERDADEIRO;
-        FIMSE
-        escreva('Viaja dentro?');
-        leia(escolha);
-        SE(escolha = 'Sim') ENTAO
-            escreva('É devagar?');
-            leia(escolha);
-            SE(escolha = 'Sim') ENTAO
-                escreva('Então, o transporte escolhido foi o balão');
-                RETORNA VERDADEIRO;
-            FIMSE
-            escreva('Tem piloto?');
-            leia(escolha);
-            SE(escolha = 'Sim') ENTAO
-                escreva('Possui asas fixas?');
-                leia(escolha);
-                SE(escolha = 'Sim') ENTAO
-                    escreva('Então, o transporte escolhido foi o avião');
-                    RETORNA VERDADEIRO;
-                FIMSE
-                escreva('Faz voo vertical?');
-                leia(escolha);
-                SE(escolha = 'Sim') ENTAO
-                    escreva('Então, o transporte escolhido foi o helicoptero');
-                    RETORNA VERDADEIRO;
-                SENAO RETORNA FALSO;
-                FIMSE
-            SENAO RETORNA FALSO;
-            FIMSE
-        SENAO RETORNA FALSO;
-        FIMSE
-    FIMSE
-
-    escreva('É aquatico?');
-    leia(escolha);
-    SE(escolha = 'Sim') ENTAO
-        escreva('É coberto de agua?');
-        leia(escolha);
-        SE(escolha = 'Sim') ENTAO
-            escreva('Então, o transporte escolhido foi o submarino');
-            RETORNA VERDADEIRO;
-        FIMSE
-        escreva('Navega na agua?');
-        leia(escolha);
-        SE(escolha = 'Sim') ENTAO
-            escreva('Possui vela?');
-            leia(escolha);
-            SE(escolha = 'Sim') ENTAO
-                escreva('Então, o transporte escolhido foi o barco');
-                RETORNA VERDADEIRO;
-            FIMSE
-            escreva('Tem motor?');
-            leia(escolha);
-            SE(escolha = 'Sim') ENTAO
-                escreva('É alto?');
-                leia(escolha);
-                SE(escolha = 'Sim') ENTAO
-                    escreva('Então, o transporte escolhido foi o navio');
-                    RETORNA VERDADEIRO;
-                FIMSE
-                escreva('Pode ser descoberto?');
-                leia(escolha);
-                SE(escolha = 'Sim') ENTAO
-                    escreva('Então, o transporte escolhido foi a lancha');
-                    RETORNA VERDADEIRO;
-                FIMSE
-            SENAO RETORNA FALSO;
-            FIMSE
-        SENAO RETORNA FALSO;
-        FIMSE
-        SENAO RETORNA FALSO;
-    FIMSE
-fim
-
+programa {
+    funcao cadeia verifica(){
+        cadeia escolhe 
+        
+        escreva("É terrestre?")
+        leia(escolhe)
+        se(escolhe == "Sim") {
+            escreva("Cabe apenas uma pessoa?")
+            leia(escolhe)
+            se (escolhe == "Sim") {
+                escreva("É pesado?")
+                leia(escolhe)
+                se (escolhe == "Sim") {
+                    escreva("Então, o transporte escolhido foi o trator")
+                    retorne "VERDADEIRO"
+                }
+                escreva("Tem pedal?")
+                leia(escolhe)
+                se (escolhe == "Sim") {
+                    escreva("Então, o transporte escolhido foi a bicicleta")
+                    retorne "VERDADEIRO"
+                }
+            }
+            escreva("Usa capacete?")
+            leia(escolhe)
+            se (escolhe == "Sim") {
+                escreva("Então, o transporte escolhido foi a moto")
+                retorne "VERDADEIRO"
+            }
+            escreva("Tem passageiro?")
+            leia(escolhe)
+            se (escolhe == "Sim") {
+                escreva("Usa trilho?")
+                leia(escolhe)
+                se (escolhe == "Sim") {
+                    escreva("Então, o transporte escolhido foi o trem")
+                    retorne "VERDADEIRO"
+                }
+                escreva("Anda na pista?")
+                leia(escolhe)
+                se (escolhe == "Sim") {
+                    escreva("É alto?")
+                    leia(escolhe)
+                    se (escolhe == "Sim") {
+                        escreva("Usa carroceria?")
+                        leia(escolhe)
+                        se (escolhe == "Sim") {
+                            escreva("Então, o transporte escolhido foi o caminhão")
+                            retorne "VERDADEIRO"
+                        }
+                        escreva("Pode ter cobrador?")
+                        leia(escolhe)
+                        se (escolhe == "Sim") {
+                            escreva("Então, o transporte escolhido foi o onibus")
+                            retorne "VERDADEIRO"
+                        }
+                    }
+                }
+            }   
+            retorne  "FALSO" 
+        }
+        
+        escreva("É aereo?")
+        leia(escolhe)
+        se(escolhe == "Sim") {
+            escreva("Pecisa pular?")
+            leia(escolhe)
+            se(escolhe == "Sim") {
+                escreva("Então, o transporte escolhido foi a asa delta")
+                retorne "VERDADEIRO"
+            }
+            escreva("Viaja dentro?")
+            leia(escolhe)
+            se(escolhe == "Sim") {
+                escreva("É devagar?")
+                leia(escolhe)
+                se(escolhe == "Sim") {
+                    escreva("Então, o transporte escolhido foi o balão")
+                    retorne "VERDADEIRO"
+                }
+                escreva("Tem piloto?")
+                leia(escolhe)
+                se(escolhe == "Sim") {
+                    escreva("Possui asas fixas?")
+                    leia(escolhe)
+                    se(escolhe == "Sim") {
+                        escreva("Então, o transporte escolhido foi o avião")
+                        retorne "VERDADEIRO"
+                    }
+                    escreva("Faz voo vertical?")
+                    leia(escolhe)
+                    se(escolhe == "Sim") {
+                        escreva("Então, o transporte escolhido foi o helicoptero")
+                        retorne "VERDADEIRO"
+                    }
+                }
+            }   
+        retorne "FALSO"
+        }
+        
+        escreva("É aquatico?")
+        leia(escolhe)
+        se(escolhe == "Sim") {
+            escreva("É coberto de agua?")
+            leia(escolhe)
+            se(escolhe == "Sim") {
+                escreva("Então, o transporte escolhido foi o submarino")
+                retorne "VERDADEIRO"
+            }
+            escreva("Navega na agua?")
+            leia(escolhe)
+            se(escolhe == "Sim") {
+                escreva("Possui vela?")
+                leia(escolhe)
+                se(escolhe == "Sim") {
+                    escreva("Então, o transporte escolhido foi o barco")
+                    retorne "VERDADEIRO"
+                }
+                escreva("Tem motor?")
+                leia(escolhe)
+                se(escolhe == "Sim") {
+                    escreva("É alto?")
+                    leia(escolhe)
+                    se(escolhe == "Sim") {
+                        escreva("Então, o transporte escolhido foi o navio")
+                        retorne "VERDADEIRO"
+                    }
+                    escreva("Pode ser descoberto?")
+                    leia(escolhe)
+                    se(escolhe == "Sim") {
+                        escreva("Então, o transporte escolhido foi a lancha")
+                        retorne "VERDADEIRO"
+                    }
+                }   
+            }
+            retorne "FALSO"
+        }
+        
+        retorne "FALSO" 
+    }
+    
+	funcao inicio() {
+		se (verifica() == "FALSO") {
+		    escreva("Nenhuma combinação foi encontrada")
+		}
+	}
+}
