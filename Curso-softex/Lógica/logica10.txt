@@ -1,0 +1,30 @@
+programa {
+	funcao inicio() {
+		inteiro rodas, pessoas
+		real peso
+
+		escreva("rodas: ")
+		leia(rodas)
+		escreva("peso bruto: ")
+		leia(peso)
+		escreva("quantidade de pessoas: ")
+		leia(pessoas)
+
+
+
+		se(rodas == 2  ou rodas == 3){
+		    escreva("A")
+		} senao se(rodas == 4 e pessoas <= 8 e peso < 3500){
+		    escreva("B")
+		} senao se(rodas >= 4 e peso >= 3500 e peso < 6000){
+		    escreva("C")
+		} senao se(rodas > 4 e pessoas > 8){
+		    escreva("D")
+		} senao se(rodas > 4 e peso > 6000 ){
+		    escreva("E")
+		} senao {
+		    escreva("erro")
+		}
+	}
+}
+sd
