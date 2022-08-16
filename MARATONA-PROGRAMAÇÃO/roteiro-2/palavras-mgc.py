@@ -1,7 +1,4 @@
-def verificaMaior(char1, char2):
-    return(ord(char1) > ord(char2))
-
-n = int(input());
+n = int(input())
 lista = []
 for i in range(n):
     s = input()
@@ -10,12 +7,15 @@ for i in range(n):
 
 for word in lista:
     verifica = 1
+    isFirst = 1
     for char in word:
-        ind = word.find(char)
-        if(ind>=1):
-            if(ord(word[ind]) <= ord(word[ind-1])):
+        if(isFirst):
+            ascAnt = ord(char)
+            isFirst = 0
+        else:
+            if(ord(char) <= ascAnt):
                 verifica = 0
-    print(verifica)
+            ascAnt = ord(char)
     if(verifica):
         print(word + ': O' )
     else:
