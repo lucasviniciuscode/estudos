@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Financeiro</title>
+    <script>
+        function calcularSalario(){
+                let number = prompt("Digite o numero do funcionário:");
+                let horas = prompt(`Digite a quantidade de horas trabalhadas do funcionário ${number}:`);
+                let valor = prompt(`Digite o valor por hora do funcionário ${number}:`);
+                let salario = horas * valor;
+                salario = salario.toFixed(2)
+                document.write(`<p>NUMBER = ${number}</p>`);
+                document.write(`<p>SALARY = U$ ${salario}</p>`);
+                imprimeBotoes();
+        }
+
+        function imprimeBotoes(){
+            document.write(`<input type="button" value="Calcular Novamente" onclick="calcularSalario()"/>`)
+            document.write(`<input type="reset" value="Limpar" onclick="recarregarPagina()"/>`)
+        }
+
+        function recarregarPagina(){
+            document.location.reload(true)
+        }
+
+        </script>
+</head>
+
+<div>
+    <input type="button" value="Calcular salario de funcionários" onclick="calcularSalario()"/>
+</div>
+</body>
+<script>
+
+</script>
+
+</html>
