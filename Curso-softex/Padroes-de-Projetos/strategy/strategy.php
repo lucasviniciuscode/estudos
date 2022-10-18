@@ -43,7 +43,7 @@ class Cliente
     public function execute(int $a, int $b, string $string): void
     {
         $this->handleOperation($string);
-        echo $this->strategy->execute($a, $b);
+        echo $this->strategy->execute($a, $b) . PHP_EOL;
     }
 
     private function handleOperation(string $operation): void
