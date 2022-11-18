@@ -9,6 +9,7 @@ CREATE TABLE aluno(
     endereco VARCHAR(30) NOT NULL,
     telefone VARCHAR(15) NOT NULL
     );
+ALTER TABLE aluno ADD COLUMN data_nascimento VARCHAR(10);
 
 CREATE TABLE emprestimo(
     codigo INT PRIMARY KEY,
@@ -34,3 +35,11 @@ CREATE TABLE sessao(
     descricao VARCHAR(30) NOT NULL,
     localizacao VARCHAR(30) NOT NULL
     );
+
+ALTER TABLE aluno ADD COLUMN data_nascimento VARCHAR(10);
+
+ALTER TABLE aluno RENAME COLUMN telefone to contato;
+
+ALTER TABLE livro ADD COLUMN ISBN INTEGER(13);
+
+ALTER TABLE livro DROP COLUMN ISBN;
